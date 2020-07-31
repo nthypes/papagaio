@@ -1,0 +1,63 @@
+{
+  "name": "papagaio",
+  "version": "0.0.0",
+  "description": "The open-source implementation of an Event Store + CQRS for Typescript applications.",
+  "main": "cjs/index.js",
+  "module": "esm/index.mjs",
+  "files": [
+    "cjs",
+    "esm"
+  ],
+  "scripts": {
+    "test": "scripty",
+    "test:watch": "scripty",
+    "test:performance": "scripty",
+    "build": "scripty",
+    "build:watch": "scripty",
+    "prepublish": "pnpm run build && pnpm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nthypes/papagaio.git"
+  },
+  "keywords": [
+    "event-sourcing",
+    "event-store",
+    "event-driven",
+    "cqrs",
+    "command-query-responsibility-segregation",
+    "ddd",
+    "domain-driven-design"
+  ],
+  "author": "Antonio Moura (nthypes)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nthypes/papagaio/issues"
+  },
+  "homepage": "https://github.com/nthypes/papagaio#readme",
+  "devDependencies": {
+    "@ef-carbon/tspm": "^2.2.5",
+    "@types/benchmark": "^1.0.33",
+    "@types/jest": "^25.2.1",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
+    "benchmark": "^2.1.4",
+    "eslint": "^6.8.0",
+    "jest": "^25.5.3",
+    "nodemon": "^2.0.4",
+    "scripty": "^2.0.0",
+    "ts-jest": "^25.4.0",
+    "ts-node": "^8.10.2",
+    "tsc-watch": "^4.2.9",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.5"
+  },
+  "scripty": {
+    "silence": true
+  },
+  "dependencies": {
+    "@types/ramda": "^0.27.4",
+    "ramda": "^0.27.0",
+    "super-ts": "^1.0.0"
+  }
+}
